@@ -12,6 +12,7 @@ en "canciones.html" utilice "map-get" y "variables para colores y tamaño de fue
 
 en "nosotros.html" puse variables de colores y variables de transpararencia, de tamaño de letra
 
-en "contacto.html" hay variables de "transparencia,colores" y puse iconos de la pagina "fontawesome"
+en "contacto.html" hay variables de "transparencia,colores".
 
-use BOOTSTRAP para acomodar el footer en todos los htmls y tambien puse galerias de imagenes en "index" y "nosotros.html"
+use BOOTSTRAP para acomodar el footer en todos los htmls y tambien puse galerias de imagenes en "index" y "nosotros.html". tambien acomode
+los iconos con Flex.
