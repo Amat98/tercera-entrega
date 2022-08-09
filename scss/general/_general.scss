@@ -1,0 +1,93 @@
+@import "../abstracts/variables";
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    list-style: none;
+}
+
+/*GRID GENERAL*/
+
+body{
+    display: grid;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+        background-color: $color-tres;
+        color: $color-secundario;
+        margin-top: auto;
+        font-size: 25px;
+        p{
+            margin-bottom: 0px;
+        }
+    }
+
+    footer{
+        section{
+            .redes-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                ul{
+                    margin: 0;
+                    padding-left: 0;
+                    li{
+                        display: inline-block;
+                        margin: 0px 20px;
+                        width: 60px;
+                        height: 50px;
+                        text-align: center;
+                        
+                        a{
+                            display: block;
+                            padding: 0 10px;
+                            line-height: 50px;
+                            margin-top: 0px;
+                            font-size: 35px;
+                            color: white;
+                            box-shadow: 0px 3px 5px 0px rgba(143, 143, 143, 0.2);
+                            transition: .2s;
+                        }
+                        a:hover{
+                            transform: translateY(-3px) scale(1.05);
+                            box-shadow: 0px 5px 5px 0px rgba(143, 143, 143, 0.4);
+                            filter: none;
+                        }
+
+                        .facebook{
+                            background-color: #3b5999;
+                        }
+
+                        .instagram{
+                            background-color: #e4405f;
+                        }
+
+                        .twitter{
+                            background-color: #55acee;
+                        }
+
+                        .linkedin{
+                            background-color: #0077B5;
+                        }
+                    }
+                }
+                ul:hover a{
+                    filter: blur(2px);
+                }
+            }
+        }
+    }
+    
+    
+}
+
